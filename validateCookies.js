@@ -1,3 +1,12 @@
+/* cookieValidator that validates cookies with an external async service
+async function cookieValidator (cookies) {
+  try {
+    await externallyValidateCookie(cookies.testCookie)
+  } catch {
+    throw new Error('Invalid cookies')
+  }
+} */
+
 var express = require('express')
 var cookieParser = require('cookie-parser')
 var cookieValidator = require('./cookieValidator')
